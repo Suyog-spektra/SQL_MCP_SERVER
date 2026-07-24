@@ -1,0 +1,23 @@
+extension SQL Server (mssql) in vs code 
+
+Foundry user role need to assign to arm template 
+
+choco install mysql -y
+
+choco install python -y
+
+python --version
+
+choco install sqlserver-odbcdriver -y
+
+python -c "import pyodbc; print(pyodbc.drivers())"
+
+choco install azure-cli -y
+
+az --version
+
+choco install dotnet-8.0-runtime -y
+
+dotnet --list-runtimes
+
+choco install dotnet-8.0-aspnetruntime -y
