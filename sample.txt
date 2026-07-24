@@ -1,23 +1,39 @@
-extension SQL Server (mssql) in vs code 
+====================================================
+FAQ ASSISTANT - LOCAL DEV MACHINE SETUP CHECKLIST
+====================================================
 
-Foundry user role need to assign to arm template 
+1) VS CODE EXTENSION
+----------------------------------------------------
+- Install "SQL Server (mssql)" extension in VS Code
 
+2) ARM TEMPLATE - PENDING ACTION
+----------------------------------------------------
+- Assign the Foundry account's "Cognitive Services OpenAI User" role
+
+3) MYSQL (LOCAL, IF NEEDED FOR SEPARATE/LOCAL TESTING)
+----------------------------------------------------
 choco install mysql -y
 
+4) PYTHON
+----------------------------------------------------
 choco install python -y
-
 python --version
 
+5) SQL SERVER ODBC DRIVER (needed for pyodbc -> Azure SQL)
+----------------------------------------------------
 choco install sqlserver-odbcdriver -y
-
 python -c "import pyodbc; print(pyodbc.drivers())"
 
+6) AZURE CLI
+----------------------------------------------------
 choco install azure-cli -y
-
 az --version
 
+7) .NET 8 RUNTIME
+----------------------------------------------------
 choco install dotnet-8.0-runtime -y
-
 dotnet --list-runtimes
 
+8) .NET 8 ASP.NET CORE RUNTIME
+----------------------------------------------------
 choco install dotnet-8.0-aspnetruntime -y
